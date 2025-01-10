@@ -5,7 +5,7 @@ try:
     tamanho_da_senha = int(input("Tamanho da senha (no mínimo 8 caracteres): "))
     if tamanho_da_senha < 8:
         raise ValueError("O comprimento da senha deve ser no mínimo 8 caracteres.")
-except ValueError as e:
+except ValueError as e:# carrega a mensagem de ValueError
     print(e)
     exit()
 
